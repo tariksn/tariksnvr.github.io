@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WTDTarıkS</title>
+</head>
+
+<body
+        background="data:image/jpeg;base64,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">
+        <a name="tepe"></a>
+        <ul>
+                <li><a href="bir.html">ÖZ GEÇMİŞİM</a></li>
+                <li><a href="iki.html">HOBİLER</a></li>
+                <li><a href="uc.html">FOBİLER</a></li>
+                <li><a href="dort.html">VİZYON</a></li>
+                <li><a href="bes.html">MİSYON</a></li>
+        </ul>
+
+        <ul>
+                <li><a href="#ozgecmis">Öz geçmiş</a></li>
+                <li><a href="#hobiler">Hobiler</a></li>
+                <li><a href="#fobiler">Fobiler</a></li>
+                <li><a href="#vizyon">Vizyon</a></li>
+                <li><a href="#misyon">Misyon</a></li>
+        </ul>
+        <h3><b>TARIK ŞANVER</b></h3>
+        <a name="ozgecmis"></a>
+        <h3>ÖZ GEÇMİŞ</h3>
+        <P><b>Lorem ipsum dolor sit amet
+                        consectetur adipisicing
+                        elit. Deleniti, labore facere ad incidunt veritatis eaque fuga porro doloribus
+                        temporibus
+                        expedita nam eius
+                        reiciendis delectus est autem, veniam, vero necessitatibus? Voluptate molestias
+                        excepturi vel id
+                        esse odit,
+                        eveniet totam, et temporibus perspiciatis magnam doloribus asperiores quidem
+                        nemo saepe beatae.
+                        Blanditiis ab
+                        sunt numquam libero pariatur nihil! Ut nihil ipsa dolorem corporis error tenetur
+                        omnis quae
+                        dignissimos
+                        assumenda, perferendis quidem necessitatibus velit neque! Alias eligendi iste
+                        quibusdam quisquam
+                        esse aliquam
+                        minima nesciunt porro fuga recusandae dolorem voluptatem delectus natus dolores,
+                        asperiores quod
+                        neque ut magni.
+                        Cumque doloremque nam quia labore cum deleniti natus earum libero nihil dolor
+                        vero illo magnam
+                        porro, maiores
+                        nostrum enim laborum excepturi adipisci odit debitis. Aut, reprehenderit.
+                        Provident maiores
+                        quaerat consectetur
+                        repudiandae ipsam, odio natus in repellat saepe facilis nesciunt cumque, vel
+                        cum, placeat quod
+                        labore. Fugit
+                        voluptatem itaque, necessitatibus provident rem omnis recusandae atque
+                        aspernatur ea adipisci
+                        quae esse,
+                        corporis nobis nemo, quisquam officia repellat maxime quaerat totam qui
+                        obcaecati. Dolores magni
+                        expedita,
+                        perspiciatis eveniet unde cupiditate eos reiciendis inventore iure sapiente,
+                        rem, eius non est
+                        exercitationem
+                        nihil libero alias? Autem beatae dignissimos voluptatem dolorem accusantium
+                        minus dicta, quam
+                        quod quo facilis
+                        enim accusamus quasi quas voluptatibus saepe porro perferendis ab veniam
+                        architecto ea tempore
+                        ipsa fuga. Magni
+                        quas, amet tenetur explicabo neque consequatur suscipit sint, perferendis
+                        voluptates molestias
+                        quae error! Esse
+                        ad soluta reiciendis hic, ea quia unde nihil veritatis autem temporibus
+                        exercitationem
+                        consequatur sapiente
+                        molestiae repudiandae quisquam voluptatibus quam tempore? Asperiores, commodi.
+                        Eos
+                        necessitatibus accusantium
+                        quo delectus dicta quisquam maiores, repellat rem! Pariatur exercitationem
+                        voluptate earum
+                        officia et velit
+                        consequatur magnam quaerat, eligendi porro repellat saepe neque quidem molestias
+                        doloribus
+                        aperiam, sapiente
+                        quod voluptatem! Sequi, delectus eius, aliquid in asperiores ut doloribus rem
+                        enim sunt quasi
+                        fuga incidunt
+                        reprehenderit numquam alias animi quia officiis aliquam atque aspernatur
+                        corporis maiores! Amet
+                        saepe sapiente
+                        aspernatur, aperiam quos necessitatibus deleniti itaque ipsum culpa rem atque
+                        aliquid,
+                        consequuntur laboriosam
+                        ea enim assumenda suscipit, tempora alias nisi placeat qui odio adipisci
+                        accusantium. Non
+                        assumenda blanditiis
+                        voluptatum, aut ratione animi officiis debitis labore dignissimos libero
+                        possimus quia,
+                        voluptatem consequuntur.
+                        Est ducimus ipsum commodi ratione, deleniti qui quam, amet magni rerum quisquam
+                        nobis saepe
+                        culpa mollitia
+                        inventore, nostrum porro perspiciatis consequatur dolor vel. Illum vero
+                        repudiandae tempore
+                        maiores sed ex
+                        laudantium, reiciendis magni est recusandae quibusdam nobis delectus laboriosam
+                        cum quis eaque.
+                        Nihil
+                        exercitationem sed soluta deserunt consectetur nesciunt eum totam Lorem ipsum
+                        dolor, sit amet
+                        consectetur adipisicing elit. Obcaecati soluta, maiores dignissimos esse aut
+                        error cupiditate
+                        quas quasi voluptatibus similique explicabo veniam eligendi omnis enim, quaerat
+                        labore
+                        voluptatum magnam aspernatur! Cumque temporibus reprehenderit officiis error
+                        ullam molestias ad
+                        voluptatum, ducimus asperiores non libero ab ipsum recusandae fugit esse. Nobis
+                        quam odit
+                        repudiandae, fugiat in expedita assumenda labore ipsum, esse explicabo,
+                        recusandae vel fugit ea
+                        totam sapiente id possimus? Ipsam voluptates delectus, doloremque fugiat enim
+                        explicabo non
+                        accusantium eveniet beatae repellendus facere et molestias provident quam aut,
+                        dicta,
+                        repudiandae animi. Illo dicta doloremque, in, aliquid ullam quam praesentium
+                        sunt iure assumenda
+                        quibusdam ea modi corrupti rerum neque, qui a quidem animi soluta minus
+                        aspernatur. Sed
+                        assumenda itaque earum saepe, impedit repellat odio, vero veniam dignissimos
+                        officia natus eum
+                        voluptas expedita tempore ratione tempora soluta error ab iusto perferendis
+                        atque excepturi.
+                        Quia, dignissimos. Ratione molestias sed quibusdam, sequi delectus nemo
+                        provident eius
+                        repellendus, aut ipsum exercitationem voluptatum magnam, dignissimos iusto fuga
+                        qui quod? Ea,
+                        temporibus hic libero quo nihil a eius esse atque. Voluptatibus, libero possimus
+                        numquam magnam
+                        ducimus ab earum cumque tempora laboriosam neque distinctio nam. Fuga, provident
+                        recusandae.
+                        Magni saepe repellat eius harum nemo unde ipsam provident, hic officia a
+                        temporibus ad in. Ipsa
+                        architecto aut modi voluptatem repellat natus ea esse doloremque? Tempore,
+                        doloribus
+                        accusantium! Optio eius aut earum laboriosam suscipit! Ratione earum natus
+                        quaerat repudiandae
+                        cupiditate quae consequuntur consectetur aspernatur qui veniam a accusamus
+                        perferendis iste
+                        dolorem mollitia facere, sapiente ipsa, voluptates ullam! Nesciunt quas
+                        cupiditate nemo corporis
+                        non at distinctio vero veritatis alias laudantium deserunt delectus expedita,
+                        sint, eaque quo!
+                        Vitae minima illum tempora molestias, optio incidunt? Iusto quod accusamus earum
+                        nulla vitae
+                        porro distinctio perspiciatis facilis modi nihil enim adipisci et ipsa,
+                        blanditiis non. Saepe
+                        obcaecati quaerat sunt placeat quos. Sed corrupti nobis hic aspernatur, delectus
+                        itaque neque
+                        fugit rerum dicta repellendus molestiae voluptas, totam dolor mollitia iste
+                        porro. Alias,
+                        aspernatur fugit quae quam aperiam, suscipit dolor obcaecati dolorem assumenda,
+                        ad inventore
+                        velit perferendis consectetur mollitia veniam nobis eius voluptatem corporis
+                        magni saepe vitae
+                        debitis sunt. Delectus accusamus nam praesentium maiores suscipit, qui ipsa
+                        inventore aut
+                        aperiam asperiores eius illum doloribus, alias nisi distinctio in ea? Velit
+                        aperiam reiciendis
+                        commodi nisi quia laudantium eius amet perspiciatis facilis eaque aspernatur,
+                        sequi odio,
+                        dolorum impedit quo placeat. Corporis labore in minus exercitationem molestiae
+                        asperiores quis
+                        laudantium quam, veritatis repellat perferendis autem alias, neque delectus
+                        error debitis enim,
+                        quibusdam nostrum assumenda odit id eum similique magni cumque. Alias nobis
+                        dicta laborum amet
+                        recusandae laboriosam hic id iste delectus animi voluptatibus assumenda in culpa
+                        itaque
+                        dignissimos eligendi, repudiandae, aut quae ut iusto iure provident illo
+                        tenetur. Doloremque,
+                        nam quasi expedita magnam assumenda consequuntur facilis? Aspernatur animi
+                        dolorum quidem unde.
+                        Nesciunt eius neque tenetur minus officiis doloremque, fuga ipsam a nisi
+                        quibusdam iste est
+                        eveniet cumque quam voluptas rerum dolorum mollitia hic fugit quos unde deserunt
+                        dolorem
+                        temporibus? Earum sint eum deserunt tempore, mollitia eligendi at aliquid rem.
+                        Nobis recusandae
+                        natus, nisi autem quam assumenda totam quod cum odio sunt ratione? </b>
+        <p>
+                <a href="#tepe">Sayfa başına geri dön</a>
+        </p>
+
+        <a name="hobiler"></a>
+        <H3>HOBİLER</H3>
+
+        <P><b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, repellat et?
+                        Inventore suscipit sit
+                        illum magni nam quaerat officia eum incidunt id aperiam eius officiis voluptas
+                        sequi, animi
+                        voluptatibus et vel
+                        error. In quia corporis id incidunt repudiandae cupiditate repellat, molestiae,
+                        aut
+                        exercitationem repellendus
+                        nisi asperiores vel aperiam! Obcaecati, iure dolorum blanditiis dolores sit
+                        adipisci corrupti
+                        voluptatum,
+                        architecto excepturi magni ullam atque! Suscipit quo animi alias fugiat quisquam
+                        esse itaque
+                        dignissimos!
+                        Repellat, laudantium voluptatibus qui officiis optio hic non nobis quia,
+                        accusantium consectetur
+                        odit neque
+                        accusamus iure architecto nulla inventore quaerat cumque tempore. Aut alias
+                        possimus dolorum cum
+                        corrupti.
+                        Labore reiciendis aliquid voluptatem repudiandae dolores, rem repellat officiis
+                        tempore culpa,
+                        non possimus
+                        corporis praesentium! Quo ad iure saepe nam libero eaque hic at eos dolorem
+                        dolor, fuga deserunt
+                        eligendi,
+                        sapiente dicta, id quasi expedita neque? Sed cum, magni quas assumenda natus
+                        modi repellat
+                        perspiciatis odio a
+                        nesciunt fugit molestias, non quisquam illum officia fugiat quasi pariatur
+                        possimus, consectetur
+                        iste. Nobis
+                        libero explicabo laboriosam, quia totam dignissimos, magnam odit possimus fugiat
+                        minima unde
+                        iste placeat odio
+                        aut dolorum, ab error temporibus quo ipsa accusantium pariatur atque. Quo non
+                        animi voluptates
+                        distinctio
+                        consequuntur assumenda hic quam corrupti maxime ipsum, temporibus sit nihil
+                        iusto quia
+                        perspiciatis consectetur
+                        consequatur esse tempora? Voluptatibus vero ipsa quod dolorem nihil natus
+                        obcaecati libero,
+                        tempora incidunt
+                        tenetur quasi ut autem adipisci quia ipsam facere doloribus voluptas illum
+                        animi. Aliquam cumque
+                        eveniet
+                        reprehenderit optio sequi, similique culpa quaerat consequatur explicabo omnis
+                        natus repellat
+                        repudiandae
+                        commodi, mollitia itaque a? Eveniet incidunt facere totam maiores doloremque
+                        debitis laborum
+                        beatae cumque
+                        dignissimos, harum quasi quisquam asperiores iste at sequi in quod sunt esse
+                        unde ullam
+                        explicabo? Reprehenderit
+                        fugiat cupiditate alias quisquam possimus debitis eaque consequatur nemo fuga
+                        sunt sapiente
+                        corporis dolore
+                        corrupti optio labore, velit beatae nulla blanditiis quidem quam laudantium
+                        id!</b> </P>
+        <p><a href="#tepe">Sayfa başına geri dön</a></p>
+        <a name="fobiler"></a>
+        <h3>FOBİLER</h3>
+
+        <p> <b> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores,
+
+                        Aliquid sit temporibus assumenda consequatur voluptatum? Fuga, laborum? Vero
+                        reprehenderit, esse
+
+                        provident perferendis modi ut iure nesciunt voluptas molestiae quas! Rem,
+                        aspernatur voluptas
+
+                        cumque delectus veniam provident rerum. Iste quae facilis assumenda vel. Dolore
+                        optio in ullam
+
+                        nobis aliquid voluptatem laborum nemo similique ipsa fuga, obcaecati ab
+                        excepturi blanditiis
+
+                        consequatur nulla quia? Quidem perspiciatis tempora assumenda voluptatem iure
+                        ipsa, alias iste
+
+                        quibusdam numquam, sapiente esse optio dolore reiciendis ratione molestiae
+                        quasi. Quam tempora
+
+                        esse iusto repellat itaque sit quaerat possimus? Veniam explicabo sed maxime
+                        vero autem cumque
+
+                        maiores iste corrupti saepe molestiae ducimus odio dignissimos pariatur nisi hic
+                        aut. Molestias
+
+                        aliquam nihil adipisci porro similique quod rem quo corrupti ad modi doloremque,
+                        ea nam saepe
+
+                        sapiente enim. Voluptatibus quidem iusto, suscipit inventore dolores a deleniti
+                        obcaecati alias
+
+                        natus Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eaque
+                        aspernatur facere
+                        reprehenderit libero cupiditate dignissimos ipsa, nostrum molestiae unde et!
+                        Similique natus
+                        eius facere expedita esse. Voluptates voluptas provident nulla excepturi,
+                        molestiae voluptatum,
+                        neque earum praesentium temporibus quae, animi enim nobis error a quaerat vel
+                        maiores. Iure
+                        quibusdam maxime saepe eum ab fuga. Laudantium quam omnis quos libero voluptas
+                        voluptatibus
+                        temporibus ullam quo reiciendis dolores quibusdam consectetur blanditiis
+                        architecto assumenda
+                        eos commodi repudiandae perspiciatis aut accusamus enim nulla, recusandae
+                        facilis porro. Ad ipsa
+                        error ex perferendis libero repellat sit! Ex consectetur aliquid atque
+                        repellendus placeat sequi
+                        provident quia enim soluta saepe dolores nobis similique laboriosam, molestiae
+                        ipsum alias
+                        commodi eius ipsa accusamus natus dolorem iusto animi fugit. Modi, sapiente
+                        ipsum. Provident
+                        laborum praesentium minus reiciendis ipsam dicta, excepturi repellat pariatur
+                        maiores iste ad
+                        explicabo, voluptates expedita earum assumenda itaque molestias dignissimos
+                        perferendis ut
+                        iusto? Qui, recusandae eius ratione explicabo non velit. Officiis rerum
+                        dignissimos magni,
+                        deleniti corporis facere adipisci ipsa rem debitis consectetur. Aut quisquam
+                        quaerat fugiat
+                        esse, fugit magnam eveniet error quae accusamus officiis. Quae reiciendis,
+                        fugiat doloribus
+                        debitis maxime perspiciatis perferendis error libero repellat hic pariatur
+                        corporis voluptate
+                        animi quam, vero iste voluptatem facilis ipsum et incidunt! Quaerat modi vel
+                        quia amet expedita
+                        corrupti autem necessitatibus aspernatur aliquid, numquam, nobis asperiores
+                        similique nesciunt
+                        totam culpa error ipsum fugit sint saepe molestiae eaque reprehenderit,
+                        assumenda dolor id.
+                        Aliquam nam nemo est fugit maiores voluptate, eius perferendis rerum fuga
+                        pariatur rem vel error
+                        esse. Earum, deleniti totam facere esse labore beatae unde? Veritatis suscipit
+                        voluptate
+                        quibusdam facere iure repellendus consequatur ipsa odio, fugit laborum, dolores
+                        earum cupiditate
+                        eaque itaque nesciunt enim rem aperiam odit quisquam saepe deserunt incidunt
+                        quos! Soluta
+                        repudiandae enim quod fugit quae voluptate quam nemo asperiores excepturi,
+                        aspernatur ex est.
+                        Laboriosam itaque repudiandae, impedit dolorem consequatur, maxime nesciunt at
+                        ratione odio
+                        cupiditate sit cum voluptatum temporibus asperiores aut? Rem error facilis
+                        corrupti fugiat
+                        nesciunt nihil inventore atque quia vel tempora cupiditate asperiores laborum ut
+                        qui veritatis,
+                        consequuntur quaerat nobis aspernatur necessitatibus! Accusantium officia
+                        suscipit expedita
+                        earum maiores deserunt, aliquid tempore totam quia sequi ipsum tempora placeat,
+                        a mollitia.
+                        Numquam fugiat unde quae magni eaque doloremque ad id vel tempora odio, ducimus,
+                        culpa expedita
+                        voluptatum est. Cupiditate laudantium rem quam fugit ipsa provident pariatur
+                        reiciendis error
+                        quo iusto dolorem corporis ab omnis sint laboriosam tenetur earum quas in
+                        nesciunt, eligendi
+                        accusantium est tempore. Molestias vero earum perspiciatis labore accusamus
+                        magnam? Qui adipisci
+                        est magni expedita? Voluptas, repudiandae. Tempora fuga magnam quae amet
+                        voluptate natus ea
+                        recusandae nulla velit excepturi. At repudiandae ducimus tenetur veniam earum
+                        nihil explicabo
+                        reiciendis dolores, eos, illum, hic quam voluptatum! Architecto fuga, nostrum
+                        aut cupiditate
+                        harum deserunt commodi, iste dolorem ad cum possimus exercitationem deleniti!
+                        Vero maiores
+                        obcaecati ratione repellat dolor, odit soluta accusamus, non iure necessitatibus
+                        ipsum quidem
+                        sed et dolore optio in, exercitationem deleniti rem quae assumenda cupiditate
+                        nesciunt eos
+                        facilis. A iure aliquam, sequi modi ab delectus rem perspiciatis! A iusto cum
+                        quo placeat
+                        temporibus minima nulla numquam facilis quas.</b></p>
+        <p><a href="#tepe">Sayfa başına geri dön</a></p>
+        <a name="vizyon"></a>
+        <h3>VİZYON</h3>
+
+        <P><b>Değişimin bireyden başladığı düşüncesiyle ilk hedefim her zaman kendime bir şeyler
+                        katabileceğim bir ortam
+                        oluşturduktan sonra kurduğum ortam paralelinde hareket etmektir. Lorem ipsum
+                        dolor sit amet
+                        consectetur
+                        adipisicing elit. Explicabo vitae distinctio tempore cumque neque, autem
+                        reiciendis sunt eum
+                        facilis, ratione
+                        animi? Blanditiis nihil eaque nesciunt! Quo quam repudiandae, atque quae
+                        mollitia officia
+                        quisquam facere
+                        laudantium cumque. Quas, necessitatibus reiciendis atque aut voluptatem impedit
+                        molestias rerum
+                        aperiam sapiente
+                        iste qui repudiandae quia dolore hic porro voluptas tempora! Necessitatibus
+                        officiis ea vero
+                        dolore sapiente
+                        dolores distinctio provident deserunt numquam similique tempora tempore
+                        praesentium commodi
+                        inventore veniam
+                        error facere, natus fugit alias quis nobis in maiores repellendus asperiores?
+                        Maxime mollitia
+                        laudantium dolorem
+                        ipsam itaque. Voluptatem mollitia labore possimus fuga inventore asperiores
+                        saepe. Itaque
+                        tempora obcaecati nam
+                        consectetur! Mollitia, maiores neque impedit suscipit vero nesciunt possimus
+                        cupiditate,
+                        pariatur ipsa dolorem
+                        aliquid deserunt! Expedita, in neque quia corrupti, ullam laudantium repellat
+                        fugit rerum
+                        beatae, consequatur
+                        blanditiis! A omnis sequi distinctio vitae laborum nisi temporibus recusandae ad
+                        qui laboriosam
+                        obcaecati, quas
+                        facilis perspiciatis delectus numquam quia ex sed cumque, rem quam, odit
+                        corrupti doloremque!
+                        Placeat molestias
+                        itaque ea, ipsam optio quaerat similique nostrum neque facilis voluptatibus!
+                        Aspernatur incidunt
+                        quam obcaecati
+                        minus esse eos, consequatur accusamus at beatae recusandae vitae accusantium
+                        officiis cum culpa
+                        maiores! Sint
+                        impedit voluptatibus cum porro excepturi quam illo magnam cupiditate quia. Amet.
+                        Lorem ipsum
+                        dolor sit amet consectetur adipisicing elit. Cumque maxime repudiandae corporis
+                        ab cum.
+                        Voluptatem iure distinctio et pariatur nulla magnam obcaecati doloribus. Illum
+                        ratione quo
+                        numquam. Excepturi explicabo placeat vitae at rerum ratione consequuntur facere,
+                        ad, maiores
+                        cumque numquam error amet aspernatur? Minus aliquam ipsa, assumenda voluptatem
+                        quis magni ipsum
+                        dolores nobis placeat blanditiis qui dolorum aut mollitia quasi quidem totam
+                        doloremque quos
+                        adipisci harum laudantium molestias libero quo beatae? Pariatur temporibus
+                        ducimus fuga quos
+                        repellendus quaerat delectus ad aliquid repellat ut at veritatis ex nostrum
+                        dignissimos placeat,
+                        vel perspiciatis earum unde suscipit modi. Obcaecati cum tempora at quaerat
+                        explicabo inventore,
+                        vel odit sed eveniet ipsum corrupti nam voluptatibus veniam iste id voluptates
+                        voluptas
+                        similique perferendis. Dicta accusamus perferendis voluptate facere, fuga rerum
+                        iste et aut
+                        eligendi vel quaerat hic rem dolor, ab saepe ut totam sit possimus a veniam
+                        unde, explicabo
+                        nostrum voluptatum praesentium. Non corporis aliquam quo recusandae aut corrupti
+                        cumque! Labore
+                        voluptas incidunt, id velit, itaque quisquam esse dicta ducimus quidem error sit
+                        maxime
+                        nesciunt. Obcaecati fugit eaque at accusamus omnis, atque corporis dolores sunt
+                        sed velit quod
+                        reiciendis consequuntur vel suscipit iure, soluta inventore molestias non maxime
+                        quis autem
+                        distinctio quidem voluptate voluptatem? Ducimus illo, enim, natus porro eaque
+                        asperiores
+                        deleniti debitis nihil dolor qui perspiciatis quaerat aliquam unde deserunt
+                        mollitia. Expedita
+                        perferendis aspernatur nihil dolor necessitatibus quae illum consequatur
+                        inventore nam magni
+                        amet enim assumenda aperiam mollitia accusamus, adipisci reprehenderit repellat
+                        quia cupiditate
+                        sapiente voluptatem? Repellendus nemo molestias nulla consequatur, corrupti
+                        adipisci, ipsum ad a
+                        neque quod possimus beatae aperiam omnis necessitatibus, rem voluptas aliquid
+                        expedita ducimus
+                        alias perferendis. Dolore recusandae dolores illum, cumque molestias ex labore
+                        at officiis
+                        tempora nam fuga maiores unde nostrum veniam iure voluptatibus quidem voluptate
+                        alias numquam
+                        harum in modi enim? Eligendi ex, nemo, error consequuntur ipsum illum enim
+                        consectetur dolorem
+                        exercitationem nulla quam, optio debitis voluptatibus quibusdam ab beatae illo
+                        fugiat quod
+                        dolores tempora unde. Deleniti eligendi dolorem illum quis, accusantium, ipsum
+                        asperiores magni
+                        eius magnam corrupti similique sed? Iure nisi deleniti aspernatur officiis
+                        aliquid deserunt.
+                        Ducimus temporibus praesentium, provident iste obcaecati voluptatem tenetur
+                        quasi voluptatibus.
+                        Animi nesciunt iure officiis. Doloribus, facere nisi pariatur eum earum illo
+                        culpa
+                        exercitationem dicta assumenda incidunt, non ut commodi nam nesciunt aspernatur
+                        porro! Dicta
+                        neque perferendis debitis pariatur delectus. Tempore facere quae error corporis
+                        aliquid pariatur
+                        sequi quibusdam iusto fuga veniam quod neque vel dignissimos dolor autem,
+                        dolorem laborum
+                        mollitia architecto esse sed animi sapiente delectus quidem! Sed eaque suscipit
+                        voluptatibus
+                        sint saepe asperiores magni omnis sunt pariatur quibusdam magnam error aliquam
+                        nobis aut
+                        inventore, velit fugit, repellendus quam soluta eum cumque! Mollitia adipisci
+                        laboriosam
+                        asperiores error officiis dolorem nostrum repudiandae accusamus. Rem, quod esse
+                        dolorum ipsam
+                        veniam at quos odio? Eveniet praesentium beatae, pariatur temporibus porro
+                        perspiciatis itaque!
+                        Numquam aliquid repellat ut hic porro, cum dicta consequatur quis odit!
+                        Exercitationem
+                        repellendus autem ex id, nostrum nulla ea ullam distinctio vitae quisquam optio
+                        quod inventore
+                        laborum aperiam obcaecati accusantium voluptate? Ratione impedit dolorum dolorem
+                        dolore
+                        similique, non explicabo voluptates in ea reiciendis? </b> </P>
+        <p><a href="#tepe">Sayfa başına geri dön</a></p>
+
+        <a name="misyon"></a>
+
+        <h3>MİSYON</h3>
+        <P><B>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora laudantium voluptates tenetur sequi vero?
+                        Laudantium perspiciatis dignissimos optio aperiam quam natus itaque nisi maiores reiciendis?
+                        Inventore earum similique esse eligendi temporibus dolore officiis eum necessitatibus officia!
+                        Accusantium magnam corporis hic laborum possimus. Voluptatum, mollitia voluptatem perferendis
+                        quos blanditiis soluta quibusdam provident ex repellendus ipsa nesciunt. Debitis, dolores rerum
+                        quia magnam non deleniti temporibus consectetur libero obcaecati quisquam magni asperiores
+                        explicabo totam! Laudantium, autem aut? Eligendi cupiditate doloribus architecto corrupti
+                        necessitatibus? Accusamus quaerat nesciunt repellat vel. Dolore earum nostrum ducimus atque nisi
+                        in quia quaerat quidem, quisquam dolor quos harum magni modi ipsam. Animi, veniam eligendi.
+                        Illum molestiae quia tempora, tempore architecto aperiam nisi nam, in vero repudiandae atque ex,
+                        iste aliquam fugit eos nulla reiciendis. Minus veritatis repudiandae temporibus, in impedit
+                        delectus laudantium omnis quae reiciendis nisi voluptatem expedita? Cum veritatis error natus
+                        praesentium et, neque officiis asperiores voluptates corporis consequuntur non quibusdam esse
+                        pariatur excepturi ratione impedit maiores a doloremque voluptas adipisci voluptatibus eius sint
+                        reprehenderit doloribus! Pariatur sit rem eligendi labore vel doloremque facilis nihil dolorum
+                        soluta accusamus qui, alias officiis, doloribus aliquid nobis vero molestias voluptas, provident
+                        inventore amet consectetur? Dolorum nulla nesciunt suscipit atque amet debitis ipsam rem
+                        corrupti maiores. Architecto deserunt, placeat in quos similique incidunt beatae iste
+                        repudiandae. Similique minus ullam odio atque aperiam sed corrupti soluta nam quia excepturi
+                        recusandae sint quis, minima temporibus mollitia voluptatum sunt magni reprehenderit quam? Ad
+                        magnam molestiae itaque sit nulla voluptates ex corporis vel ipsa? Quidem adipisci perspiciatis
+                        odit tempora iste aspernatur nihil. Cum laborum eligendi dolorem. Dolore eligendi recusandae
+                        omnis odit atque vero? Consequuntur laboriosam commodi optio libero doloremque eligendi iure
+                        nemo atque porro corrupti? Unde neque nam amet hic numquam explicabo eius distinctio, facilis
+                        adipisci similique laudantium, in saepe aperiam commodi quidem, perferendis sint provident!</B>
+        <p><a href="#tepe">Sayfa başına geri dön</a></p>
+</body background>
+
+</html>
